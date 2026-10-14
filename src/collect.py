@@ -295,11 +295,18 @@ def fetch_dataset(fetch, ds_cfg: dict, geos: list[dict], codesets: dict) -> dict
     if not isinstance(raw, list) or len(raw) != len(specs):
         raise ValidationError(f"{ds_cfg['key']}: expected {len(specs)} series, got "
                               f"{len(raw) if isinstance(raw, list) else type(raw).__name__}")
+    # WDS does not promise response order: match each answer to its request by coordinate.
+    by_coord = {}
+    for item in raw:
+        obj = _wds_object(item, ds_cfg["key"])
+        if not obj.get("coordinate"):
+            raise ValidationError(f"{ds_cfg['key']}: data response without a coordinate")
+        by_coord[_coord(obj["coordinate"])] = obj
     series = {}
-    for spec, item in zip(specs, raw):
-        obj = _wds_object(item, spec["key"])
-        if obj.get("coordinate") and _coord(obj["coordinate"]) != _coord(spec["coordinate"]):
-            raise ValidationError(f"{spec['key']}: response coordinate {obj.get('coordinate')} != {spec['coordinate']}")
+    for spec in specs:
+        obj = by_coord.get(_coord(spec["coordinate"]))
+        if obj is None:
+            raise ValidationError(f"{spec['key']}: no data returned for coordinate {spec['coordinate']}")
         pts = normalise_points(spec, obj, codesets, ds_cfg["frequency"])
         latest = pts[max(pts)]
         sc_info = _code_info(codesets, "scalar", latest["scalarFactorCode"])

@@ -48,6 +48,15 @@ class Resolution(Base):
         self.assertEqual(set(self.doc("labour_force")["series"]),
                          {f"{g}.{m}" for g in ("vic", "bc", "ca") for m in ("employment", "employment_rate", "unemployment_rate")})
 
+    def test_response_order_does_not_matter(self):
+        fake = FakeWDS()
+        fake.reverse = True
+        self.assertTrue(collect.run(self.tmp, fetch=fake, now=T0)["ok"])
+        s = self.doc("labour_force")["series"]
+        self.assertEqual(s["vic.employment"]["coordinate"], "3.3.1.1.0.0.0.0.0.0")
+        self.assertAlmostEqual(s["vic.employment"]["observations"]["2026-09-01"]["value"], 437.4, places=1)
+        self.assertLess(s["vic.unemployment_rate"]["observations"]["2026-09-01"]["value"], 20)
+
     def test_unknown_label_fails_loudly_and_keeps_nothing_partial(self):
         cfg = json.loads((self.tmp / "config" / "series.json").read_text())
         cfg["datasets"][0]["measures"][0]["accept"] = ["Employment (persons)"]

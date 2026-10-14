@@ -70,6 +70,7 @@ class FakeWDS:
         self.malformed = set()     # {"lfs", "jv"} -> return a broken payload
         self.overrides = {}        # (pid, coordinate, refPer) -> dict of datapoint fields
         self.calls = []
+        self.reverse = False       # WDS does not guarantee response order
 
     def __call__(self, method, endpoint, payload=None):
         from src.collect import FetchError
@@ -86,7 +87,8 @@ class FakeWDS:
             return [copy.deepcopy(LFS_META if tag == "lfs" else JV_META)]
         if tag in self.malformed:
             return [{"status": "SUCCESS", "object": {"vectorDataPoint": [{"refPer": "garbage", "value": "n/a"}]}}]
-        return [self._series(tag, req) for req in payload]
+        out = [self._series(tag, req) for req in payload]
+        return out[::-1] if self.reverse else out
 
     def _series(self, tag, req):
         ids = [int(x) for x in req["coordinate"].split(".")]
