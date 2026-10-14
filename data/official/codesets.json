@@ -1,0 +1,1966 @@
+{
+  "scalar": {
+    "0": {
+      "symbol": "",
+      "desc": "units"
+    },
+    "1": {
+      "symbol": "",
+      "desc": "tens"
+    },
+    "2": {
+      "symbol": "",
+      "desc": "hundreds"
+    },
+    "3": {
+      "symbol": "",
+      "desc": "thousands"
+    },
+    "4": {
+      "symbol": "",
+      "desc": "tens of thousands"
+    },
+    "5": {
+      "symbol": "",
+      "desc": "hundreds of thousands"
+    },
+    "6": {
+      "symbol": "",
+      "desc": "millions"
+    },
+    "7": {
+      "symbol": "",
+      "desc": "tens of millions"
+    },
+    "8": {
+      "symbol": "",
+      "desc": "hundreds of millions"
+    },
+    "9": {
+      "symbol": "",
+      "desc": "billions"
+    }
+  },
+  "status": {
+    "0": {
+      "symbol": "",
+      "desc": "normal"
+    },
+    "1": {
+      "symbol": "..",
+      "desc": "not available for a specific reference period"
+    },
+    "10": {
+      "symbol": "<LOD",
+      "desc": "less than the limit of detection"
+    },
+    "2": {
+      "symbol": "0s",
+      "desc": "value rounded to 0 (zero) where there is a meaningful distinction between true zero and the value that was rounded"
+    },
+    "3": {
+      "symbol": "A",
+      "desc": "data quality: excellent"
+    },
+    "4": {
+      "symbol": "B",
+      "desc": "data quality: very good"
+    },
+    "5": {
+      "symbol": "C",
+      "desc": "data quality: good"
+    },
+    "6": {
+      "symbol": "D",
+      "desc": "data quality: acceptable"
+    },
+    "7": {
+      "symbol": "E",
+      "desc": "use with caution"
+    },
+    "8": {
+      "symbol": "F",
+      "desc": "too unreliable to be published"
+    },
+    "9": {
+      "symbol": "...",
+      "desc": "not applicable"
+    }
+  },
+  "symbol": {
+    "0": {
+      "symbol": "",
+      "desc": "none"
+    },
+    "1": {
+      "symbol": "p",
+      "desc": "preliminary"
+    },
+    "3": {
+      "symbol": "r",
+      "desc": "revised"
+    }
+  },
+  "uom": {
+    "0": {
+      "symbol": "",
+      "desc": ""
+    },
+    "1": {
+      "symbol": "",
+      "desc": "1981=100"
+    },
+    "10": {
+      "symbol": "",
+      "desc": "199712=100"
+    },
+    "100": {
+      "symbol": "",
+      "desc": "Dollars per 8 litres"
+    },
+    "101": {
+      "symbol": "",
+      "desc": "Dollars per 9 litres"
+    },
+    "102": {
+      "symbol": "",
+      "desc": "Dollars per 9,000 feet"
+    },
+    "103": {
+      "symbol": "",
+      "desc": "Dollars per 9.5 litres"
+    },
+    "104": {
+      "symbol": "",
+      "desc": "Dollars per bushel"
+    },
+    "105": {
+      "symbol": "",
+      "desc": "Dollars per carton"
+    },
+    "106": {
+      "symbol": "",
+      "desc": "Dollars per dozen"
+    },
+    "107": {
+      "symbol": "",
+      "desc": "Dollars per hour"
+    },
+    "108": {
+      "symbol": "",
+      "desc": "Dollars per hundredweight"
+    },
+    "109": {
+      "symbol": "",
+      "desc": "Dollars per hundredweight"
+    },
+    "11": {
+      "symbol": "",
+      "desc": "1997=100"
+    },
+    "110": {
+      "symbol": "",
+      "desc": "Dollars per hundredweight"
+    },
+    "111": {
+      "symbol": "",
+      "desc": "Dollars per hundredweight"
+    },
+    "112": {
+      "symbol": "",
+      "desc": "Dollars per hundredweight of milk"
+    },
+    "113": {
+      "symbol": "",
+      "desc": "Dollars per kilogram"
+    },
+    "114": {
+      "symbol": "",
+      "desc": "Dollars per kilolitre"
+    },
+    "115": {
+      "symbol": "",
+      "desc": "Dollars per kilometre"
+    },
+    "116": {
+      "symbol": "",
+      "desc": "Dollars per litre"
+    },
+    "117": {
+      "symbol": "",
+      "desc": "Dollars per metric tonne"
+    },
+    "118": {
+      "symbol": "",
+      "desc": "Dollars per person"
+    },
+    "119": {
+      "symbol": "",
+      "desc": "Dollars per pound"
+    },
+    "12": {
+      "symbol": "",
+      "desc": "1999=100"
+    },
+    "120": {
+      "symbol": "",
+      "desc": "Dollars per ton"
+    },
+    "121": {
+      "symbol": "",
+      "desc": "Dollars per tonne"
+    },
+    "122": {
+      "symbol": "",
+      "desc": "Dollars per tonnes"
+    },
+    "123": {
+      "symbol": "",
+      "desc": "Dollars per unit of real GDP"
+    },
+    "124": {
+      "symbol": "",
+      "desc": "Dollars, 1972=100"
+    },
+    "125": {
+      "symbol": "",
+      "desc": "Dollars, 1981=100"
+    },
+    "126": {
+      "symbol": "",
+      "desc": "Dollars, 1982=100"
+    },
+    "127": {
+      "symbol": "",
+      "desc": "Dollars, 1986=100"
+    },
+    "128": {
+      "symbol": "",
+      "desc": "Dollars, 1992"
+    },
+    "129": {
+      "symbol": "",
+      "desc": "Dozens"
+    },
+    "13": {
+      "symbol": "",
+      "desc": "2000=100"
+    },
+    "130": {
+      "symbol": "",
+      "desc": "Dozens per person, per year"
+    },
+    "131": {
+      "symbol": "",
+      "desc": "Duration"
+    },
+    "132": {
+      "symbol": "",
+      "desc": "Eggs"
+    },
+    "133": {
+      "symbol": "",
+      "desc": "Employees"
+    },
+    "134": {
+      "symbol": "",
+      "desc": "Employees"
+    },
+    "135": {
+      "symbol": "",
+      "desc": "Enterprises"
+    },
+    "136": {
+      "symbol": "",
+      "desc": "Establishments"
+    },
+    "137": {
+      "symbol": "",
+      "desc": "Evenings"
+    },
+    "138": {
+      "symbol": "",
+      "desc": "Families"
+    },
+    "139": {
+      "symbol": "",
+      "desc": "Firms"
+    },
+    "14": {
+      "symbol": "",
+      "desc": "2002 constant dollars"
+    },
+    "140": {
+      "symbol": "",
+      "desc": "Foreign-born persons"
+    },
+    "141": {
+      "symbol": "",
+      "desc": "Full-time equivalent"
+    },
+    "142": {
+      "symbol": "",
+      "desc": "Gallons"
+    },
+    "143": {
+      "symbol": "",
+      "desc": "Gigajoules"
+    },
+    "144": {
+      "symbol": "",
+      "desc": "Gigajoules per thousand current dollars of production"
+    },
+    "145": {
+      "symbol": "",
+      "desc": "Gigalitres"
+    },
+    "146": {
+      "symbol": "",
+      "desc": "Gigawatt hours"
+    },
+    "147": {
+      "symbol": "",
+      "desc": "Grams"
+    },
+    "148": {
+      "symbol": "",
+      "desc": "Head"
+    },
+    "149": {
+      "symbol": "",
+      "desc": "Hectares"
+    },
+    "15": {
+      "symbol": "",
+      "desc": "2002/2003 constant dollars"
+    },
+    "150": {
+      "symbol": "",
+      "desc": "High 95% confidence interval"
+    },
+    "151": {
+      "symbol": "",
+      "desc": "Hogs"
+    },
+    "152": {
+      "symbol": "",
+      "desc": "Hours"
+    },
+    "153": {
+      "symbol": "",
+      "desc": "Hours in thousands"
+    },
+    "154": {
+      "symbol": "",
+      "desc": "Households"
+    },
+    "155": {
+      "symbol": "",
+      "desc": "Hundredweight"
+    },
+    "156": {
+      "symbol": "",
+      "desc": "Hundredweight"
+    },
+    "157": {
+      "symbol": "",
+      "desc": "Hundredweight"
+    },
+    "158": {
+      "symbol": "",
+      "desc": "Hundredweight per acre"
+    },
+    "159": {
+      "symbol": "",
+      "desc": "Hundredweight per harvested acres"
+    },
+    "16": {
+      "symbol": "",
+      "desc": "200212=100"
+    },
+    "160": {
+      "symbol": "",
+      "desc": "Index"
+    },
+    "161": {
+      "symbol": "",
+      "desc": "Index, 1926=100"
+    },
+    "162": {
+      "symbol": "",
+      "desc": "Index, 1948=100/1968=100"
+    },
+    "163": {
+      "symbol": "",
+      "desc": "Index, 1961=100"
+    },
+    "164": {
+      "symbol": "",
+      "desc": "Index, 1967=100"
+    },
+    "165": {
+      "symbol": "",
+      "desc": "Index, 1971=100"
+    },
+    "166": {
+      "symbol": "",
+      "desc": "Index, 1972=100"
+    },
+    "167": {
+      "symbol": "",
+      "desc": "Index, 1975=1000"
+    },
+    "168": {
+      "symbol": "",
+      "desc": "Index, 1977=100"
+    },
+    "169": {
+      "symbol": "",
+      "desc": "Index, 1981=100"
+    },
+    "17": {
+      "symbol": "",
+      "desc": "2002=100"
+    },
+    "170": {
+      "symbol": "",
+      "desc": "Index, 1982-84=100"
+    },
+    "171": {
+      "symbol": "",
+      "desc": "Index, 1986=100"
+    },
+    "172": {
+      "symbol": "",
+      "desc": "Index, 1990=100"
+    },
+    "173": {
+      "symbol": "",
+      "desc": "Index, 1992=100"
+    },
+    "174": {
+      "symbol": "",
+      "desc": "Index, 199712=100"
+    },
+    "175": {
+      "symbol": "",
+      "desc": "Index, 1997=100"
+    },
+    "176": {
+      "symbol": "",
+      "desc": "Index, 2000=1000"
+    },
+    "177": {
+      "symbol": "",
+      "desc": "Index, 2001=100"
+    },
+    "178": {
+      "symbol": "",
+      "desc": "Index, 2002=100"
+    },
+    "179": {
+      "symbol": "",
+      "desc": "Index, 2003=100"
+    },
+    "18": {
+      "symbol": "",
+      "desc": "2007 constant dollars"
+    },
+    "180": {
+      "symbol": "",
+      "desc": "Index, 2006=100"
+    },
+    "181": {
+      "symbol": "",
+      "desc": "Index, 2007=100"
+    },
+    "182": {
+      "symbol": "",
+      "desc": "Index, 2008=100"
+    },
+    "183": {
+      "symbol": "",
+      "desc": "Index, 2009=100"
+    },
+    "184": {
+      "symbol": "",
+      "desc": "Index, 2010=100"
+    },
+    "185": {
+      "symbol": "",
+      "desc": "Index, 2011=100"
+    },
+    "186": {
+      "symbol": "",
+      "desc": "Index, 2013=100"
+    },
+    "187": {
+      "symbol": "",
+      "desc": "Index, 82-90=100"
+    },
+    "188": {
+      "symbol": "",
+      "desc": "Index, combined city average=100"
+    },
+    "189": {
+      "symbol": "",
+      "desc": "Index,1992=100"
+    },
+    "19": {
+      "symbol": "",
+      "desc": "200704=100"
+    },
+    "190": {
+      "symbol": "",
+      "desc": "Jobs"
+    },
+    "191": {
+      "symbol": "",
+      "desc": "Kilocalories"
+    },
+    "192": {
+      "symbol": "",
+      "desc": "Kilograms"
+    },
+    "193": {
+      "symbol": "",
+      "desc": "Kilograms per hectare"
+    },
+    "194": {
+      "symbol": "",
+      "desc": "Kilograms per person, per year"
+    },
+    "195": {
+      "symbol": "",
+      "desc": "Kilolitres"
+    },
+    "196": {
+      "symbol": "",
+      "desc": "Kilometres"
+    },
+    "197": {
+      "symbol": "",
+      "desc": "Kilometres per hour"
+    },
+    "198": {
+      "symbol": "",
+      "desc": "Kilotonnes"
+    },
+    "199": {
+      "symbol": "",
+      "desc": "Kilowatt-hours"
+    },
+    "2": {
+      "symbol": "",
+      "desc": "198203=100"
+    },
+    "20": {
+      "symbol": "",
+      "desc": "2007=100"
+    },
+    "200": {
+      "symbol": "",
+      "desc": "Kilowatts"
+    },
+    "201": {
+      "symbol": "",
+      "desc": "Layers"
+    },
+    "202": {
+      "symbol": "",
+      "desc": "Lines"
+    },
+    "203": {
+      "symbol": "",
+      "desc": "Litres"
+    },
+    "204": {
+      "symbol": "",
+      "desc": "Litres absolute alcohol"
+    },
+    "205": {
+      "symbol": "",
+      "desc": "Litres per person, per year"
+    },
+    "206": {
+      "symbol": "",
+      "desc": "Low 95% confidence interval"
+    },
+    "207": {
+      "symbol": "",
+      "desc": "Mean number"
+    },
+    "208": {
+      "symbol": "",
+      "desc": "Megalitres"
+    },
+    "209": {
+      "symbol": "",
+      "desc": "Megatonnes"
+    },
+    "21": {
+      "symbol": "",
+      "desc": "2010=100"
+    },
+    "210": {
+      "symbol": "",
+      "desc": "Megawatt hours"
+    },
+    "211": {
+      "symbol": "",
+      "desc": "Message"
+    },
+    "212": {
+      "symbol": "",
+      "desc": "Metric bundles"
+    },
+    "213": {
+      "symbol": "",
+      "desc": "Metric rolls"
+    },
+    "214": {
+      "symbol": "",
+      "desc": "Metric tonnes"
+    },
+    "215": {
+      "symbol": "",
+      "desc": "Metric units"
+    },
+    "216": {
+      "symbol": "",
+      "desc": "Micrograms"
+    },
+    "217": {
+      "symbol": "",
+      "desc": "Milligrams"
+    },
+    "218": {
+      "symbol": "",
+      "desc": "Millimetres"
+    },
+    "219": {
+      "symbol": "",
+      "desc": "Minutes"
+    },
+    "22": {
+      "symbol": "",
+      "desc": "201104=100"
+    },
+    "220": {
+      "symbol": "",
+      "desc": "Months"
+    },
+    "221": {
+      "symbol": "",
+      "desc": "Month/day"
+    },
+    "222": {
+      "symbol": "",
+      "desc": "National currency per Canadian dollar"
+    },
+    "223": {
+      "symbol": "",
+      "desc": "Number"
+    },
+    "224": {
+      "symbol": "",
+      "desc": "Niacin equivalent"
+    },
+    "225": {
+      "symbol": "",
+      "desc": "Nights"
+    },
+    "226": {
+      "symbol": "",
+      "desc": "Number in thousands"
+    },
+    "227": {
+      "symbol": "",
+      "desc": "Number of farms reporting"
+    },
+    "228": {
+      "symbol": "",
+      "desc": "Number of visits"
+    },
+    "229": {
+      "symbol": "",
+      "desc": "Number per square kilometre"
+    },
+    "23": {
+      "symbol": "",
+      "desc": "2012 constant dollars"
+    },
+    "230": {
+      "symbol": "",
+      "desc": "Other British- and foreign-born persons"
+    },
+    "231": {
+      "symbol": "",
+      "desc": "Other British-born persons"
+    },
+    "232": {
+      "symbol": "",
+      "desc": "Oven-dry metric tonnes"
+    },
+    "233": {
+      "symbol": "",
+      "desc": "Pairs"
+    },
+    "234": {
+      "symbol": "",
+      "desc": "Passenger-kilometres"
+    },
+    "235": {
+      "symbol": "",
+      "desc": "Passenger-kilometres"
+    },
+    "236": {
+      "symbol": "",
+      "desc": "Passengers"
+    },
+    "237": {
+      "symbol": "",
+      "desc": "Passengers"
+    },
+    "238": {
+      "symbol": "",
+      "desc": "Passengers-miles"
+    },
+    "239": {
+      "symbol": "",
+      "desc": "Percent"
+    },
+    "24": {
+      "symbol": "",
+      "desc": "2012/01=100"
+    },
+    "240": {
+      "symbol": "",
+      "desc": "Percent change (1986=100)"
+    },
+    "241": {
+      "symbol": "",
+      "desc": "Percent change (1992=100)"
+    },
+    "242": {
+      "symbol": "",
+      "desc": "Percentage"
+    },
+    "243": {
+      "symbol": "",
+      "desc": "Percentage of gross domestic income"
+    },
+    "244": {
+      "symbol": "",
+      "desc": "Percentage of gross domestic product"
+    },
+    "245": {
+      "symbol": "",
+      "desc": "Percentage of households"
+    },
+    "246": {
+      "symbol": "",
+      "desc": "Percentage share"
+    },
+    "247": {
+      "symbol": "",
+      "desc": "Person-trips"
+    },
+    "248": {
+      "symbol": "",
+      "desc": "Person-visits"
+    },
+    "249": {
+      "symbol": "",
+      "desc": "Persons"
+    },
+    "25": {
+      "symbol": "",
+      "desc": "2013=100"
+    },
+    "250": {
+      "symbol": "",
+      "desc": "Petajoules"
+    },
+    "251": {
+      "symbol": "",
+      "desc": "Point"
+    },
+    "252": {
+      "symbol": "",
+      "desc": "Policies"
+    },
+    "253": {
+      "symbol": "",
+      "desc": "Poults"
+    },
+    "254": {
+      "symbol": "",
+      "desc": "Pounds"
+    },
+    "255": {
+      "symbol": "",
+      "desc": "Pounds of milk"
+    },
+    "256": {
+      "symbol": "",
+      "desc": "Pounds per acre"
+    },
+    "257": {
+      "symbol": "",
+      "desc": "Rate"
+    },
+    "258": {
+      "symbol": "",
+      "desc": "Rate per 1,000 births"
+    },
+    "259": {
+      "symbol": "",
+      "desc": "Rate per 1,000 legally married females"
+    },
+    "26": {
+      "symbol": "",
+      "desc": "Access lines"
+    },
+    "260": {
+      "symbol": "",
+      "desc": "Rate per 1,000 legally married males"
+    },
+    "261": {
+      "symbol": "",
+      "desc": "Rate per 1,000 live births"
+    },
+    "262": {
+      "symbol": "",
+      "desc": "Rate per 1,000 males"
+    },
+    "263": {
+      "symbol": "",
+      "desc": "Rate per 1,000 marriages"
+    },
+    "264": {
+      "symbol": "",
+      "desc": "Rate per 1,000 total births"
+    },
+    "265": {
+      "symbol": "",
+      "desc": "Rate per 100,000 population"
+    },
+    "266": {
+      "symbol": "",
+      "desc": "Rates per 1,000 females"
+    },
+    "267": {
+      "symbol": "",
+      "desc": "Rates per 1,000 population"
+    },
+    "268": {
+      "symbol": "",
+      "desc": "Rates per 1,000 unmarried females"
+    },
+    "269": {
+      "symbol": "",
+      "desc": "Rates per 1,000 unmarried males"
+    },
+    "27": {
+      "symbol": "",
+      "desc": "Accidents"
+    },
+    "270": {
+      "symbol": "",
+      "desc": "Ratio"
+    },
+    "271": {
+      "symbol": "",
+      "desc": "Ratio"
+    },
+    "272": {
+      "symbol": "",
+      "desc": "Ratio"
+    },
+    "273": {
+      "symbol": "",
+      "desc": "Records"
+    },
+    "274": {
+      "symbol": "",
+      "desc": "Retinol equivalent"
+    },
+    "275": {
+      "symbol": "",
+      "desc": "Seat-kilometres"
+    },
+    "276": {
+      "symbol": "",
+      "desc": "Shares"
+    },
+    "277": {
+      "symbol": "",
+      "desc": "Shares"
+    },
+    "278": {
+      "symbol": "",
+      "desc": "Shelters"
+    },
+    "279": {
+      "symbol": "",
+      "desc": "Square feet"
+    },
+    "28": {
+      "symbol": "",
+      "desc": "Acres"
+    },
+    "280": {
+      "symbol": "",
+      "desc": "Square kilometres"
+    },
+    "281": {
+      "symbol": "",
+      "desc": "Square metres"
+    },
+    "282": {
+      "symbol": "",
+      "desc": "Tapes"
+    },
+    "283": {
+      "symbol": "",
+      "desc": "Terajoules"
+    },
+    "284": {
+      "symbol": "",
+      "desc": "Thousands of dollars"
+    },
+    "285": {
+      "symbol": "",
+      "desc": "Tonne-kilometres"
+    },
+    "286": {
+      "symbol": "",
+      "desc": "Tonne-miles"
+    },
+    "287": {
+      "symbol": "",
+      "desc": "Tonnes"
+    },
+    "288": {
+      "symbol": "",
+      "desc": "Tonnes"
+    },
+    "289": {
+      "symbol": "",
+      "desc": "Tonnes of oil equivalent"
+    },
+    "29": {
+      "symbol": "",
+      "desc": "Age-sex-standardized rate per 100,000 population"
+    },
+    "290": {
+      "symbol": "",
+      "desc": "Tonnes per thousand current dollars of production"
+    },
+    "291": {
+      "symbol": "",
+      "desc": "Tons"
+    },
+    "292": {
+      "symbol": "",
+      "desc": "Tons"
+    },
+    "293": {
+      "symbol": "",
+      "desc": "Tons per acre"
+    },
+    "294": {
+      "symbol": "",
+      "desc": "Troy ounces"
+    },
+    "295": {
+      "symbol": "",
+      "desc": "Twenty feet equivalent units"
+    },
+    "296": {
+      "symbol": "",
+      "desc": "US dollars per unit of real GDP"
+    },
+    "297": {
+      "symbol": "",
+      "desc": "United States Dollars"
+    },
+    "298": {
+      "symbol": "",
+      "desc": "United States dollars"
+    },
+    "299": {
+      "symbol": "",
+      "desc": "United States dollars per Canadian dollar"
+    },
+    "3": {
+      "symbol": "",
+      "desc": "1986=100"
+    },
+    "30": {
+      "symbol": "",
+      "desc": "Age-standardized rate per 100,000 population"
+    },
+    "300": {
+      "symbol": "",
+      "desc": "Units"
+    },
+    "301": {
+      "symbol": "",
+      "desc": "Vehicle-kilometres"
+    },
+    "302": {
+      "symbol": "",
+      "desc": "Vehicles"
+    },
+    "303": {
+      "symbol": "",
+      "desc": "Weeks"
+    },
+    "304": {
+      "symbol": "",
+      "desc": "Weights"
+    },
+    "305": {
+      "symbol": "",
+      "desc": "Weights, 1986=100"
+    },
+    "306": {
+      "symbol": "",
+      "desc": "Weights, 1997=100"
+    },
+    "307": {
+      "symbol": "",
+      "desc": "Women"
+    },
+    "308": {
+      "symbol": "",
+      "desc": "Years"
+    },
+    "309": {
+      "symbol": "",
+      "desc": "Dollars, 2002"
+    },
+    "31": {
+      "symbol": "",
+      "desc": "Agreements"
+    },
+    "310": {
+      "symbol": "",
+      "desc": "Micrograms per litre (µg/L)"
+    },
+    "311": {
+      "symbol": "",
+      "desc": "Minutes per day"
+    },
+    "312": {
+      "symbol": "",
+      "desc": "Nanograms per millilitre (ng/mL)"
+    },
+    "313": {
+      "symbol": "",
+      "desc": "Nanomoles per litre (nmol/L)"
+    },
+    "314": {
+      "symbol": "",
+      "desc": "2013 constant dollars"
+    },
+    "315": {
+      "symbol": "",
+      "desc": "Dollars per head"
+    },
+    "316": {
+      "symbol": "",
+      "desc": "Quarts"
+    },
+    "317": {
+      "symbol": "",
+      "desc": "Dollars per thousand cubic metres"
+    },
+    "318": {
+      "symbol": "",
+      "desc": "Litres per person per day"
+    },
+    "319": {
+      "symbol": "",
+      "desc": "Twenty feet equivalent units"
+    },
+    "32": {
+      "symbol": "",
+      "desc": "Average hours per day"
+    },
+    "320": {
+      "symbol": "",
+      "desc": "Gigajoules per thousand cubic metres"
+    },
+    "321": {
+      "symbol": "",
+      "desc": "2007 chained dollars"
+    },
+    "322": {
+      "symbol": "",
+      "desc": "2014 constant dollars"
+    },
+    "323": {
+      "symbol": "",
+      "desc": "Cubic kilometres"
+    },
+    "324": {
+      "symbol": "",
+      "desc": "2015=100"
+    },
+    "325": {
+      "symbol": "",
+      "desc": "Weight in carats"
+    },
+    "326": {
+      "symbol": "",
+      "desc": "Number of gross"
+    },
+    "327": {
+      "symbol": "",
+      "desc": "Volume in hectolitres"
+    },
+    "328": {
+      "symbol": "",
+      "desc": "Weight in kilograms of named substance"
+    },
+    "329": {
+      "symbol": "",
+      "desc": "Weight in air dry kilograms"
+    },
+    "33": {
+      "symbol": "",
+      "desc": "Bankruptcies"
+    },
+    "330": {
+      "symbol": "",
+      "desc": "Volume in litres of pure alcohol"
+    },
+    "331": {
+      "symbol": "",
+      "desc": "Volume in litres"
+    },
+    "332": {
+      "symbol": "",
+      "desc": "Area in square metres"
+    },
+    "333": {
+      "symbol": "",
+      "desc": "Volume in cubic metres"
+    },
+    "334": {
+      "symbol": "",
+      "desc": "Length in metres"
+    },
+    "335": {
+      "symbol": "",
+      "desc": "Megawatt-Hour"
+    },
+    "336": {
+      "symbol": "",
+      "desc": "Number of packages"
+    },
+    "337": {
+      "symbol": "",
+      "desc": "Thousands of cubic metres"
+    },
+    "338": {
+      "symbol": "",
+      "desc": "Weight in metric tonne"
+    },
+    "339": {
+      "symbol": "",
+      "desc": "Metric tonne air dry"
+    },
+    "34": {
+      "symbol": "",
+      "desc": "Barrels"
+    },
+    "340": {
+      "symbol": "",
+      "desc": "Number of dozens"
+    },
+    "341": {
+      "symbol": "",
+      "desc": "Weight in grams"
+    },
+    "342": {
+      "symbol": "",
+      "desc": "Weight in kilograms"
+    },
+    "343": {
+      "symbol": "",
+      "desc": "Blank"
+    },
+    "344": {
+      "symbol": "",
+      "desc": "Number of pairs"
+    },
+    "345": {
+      "symbol": "",
+      "desc": "2015 constant dollars"
+    },
+    "346": {
+      "symbol": "",
+      "desc": "2014=100"
+    },
+    "347": {
+      "symbol": "",
+      "desc": "Index, 201612=100"
+    },
+    "348": {
+      "symbol": "",
+      "desc": "Index, 2012=100"
+    },
+    "349": {
+      "symbol": "",
+      "desc": "Available seat-kilometres"
+    },
+    "35": {
+      "symbol": "",
+      "desc": "Barrels per day"
+    },
+    "350": {
+      "symbol": "",
+      "desc": "2016 constant dollars"
+    },
+    "351": {
+      "symbol": "",
+      "desc": "Index, 2014=100"
+    },
+    "352": {
+      "symbol": "",
+      "desc": "Nanograms per litre (ng/L)"
+    },
+    "353": {
+      "symbol": "",
+      "desc": "Micromoles per millimole (µmol/mmol)"
+    },
+    "354": {
+      "symbol": "",
+      "desc": "Micromoles per litre (µmol/L)"
+    },
+    "355": {
+      "symbol": "",
+      "desc": "Milligrams per Litre (mg/L)"
+    },
+    "356": {
+      "symbol": "",
+      "desc": "Micrograms per cubic metre (µg/m3)"
+    },
+    "357": {
+      "symbol": "",
+      "desc": "M.ft.b.m"
+    },
+    "358": {
+      "symbol": "",
+      "desc": "Basis points"
+    },
+    "359": {
+      "symbol": "",
+      "desc": "Dollars per gram"
+    },
+    "36": {
+      "symbol": "",
+      "desc": "Benefit periods"
+    },
+    "360": {
+      "symbol": "",
+      "desc": "Centimetres"
+    },
+    "361": {
+      "symbol": "",
+      "desc": "Kilograms per metre squared"
+    },
+    "362": {
+      "symbol": "",
+      "desc": "Millilitres per kilogram per minute"
+    },
+    "363": {
+      "symbol": "",
+      "desc": "Millimetres of mercury"
+    },
+    "364": {
+      "symbol": "",
+      "desc": "Beats per minute"
+    },
+    "365": {
+      "symbol": "",
+      "desc": "Grams per litre"
+    },
+    "366": {
+      "symbol": "",
+      "desc": "Millimoles per litre"
+    },
+    "367": {
+      "symbol": "",
+      "desc": "Billions per litre"
+    },
+    "368": {
+      "symbol": "",
+      "desc": "Picomoles per litre"
+    },
+    "369": {
+      "symbol": "",
+      "desc": "Milli-international units per litre"
+    },
+    "37": {
+      "symbol": "",
+      "desc": "Birds"
+    },
+    "370": {
+      "symbol": "",
+      "desc": "Constant dollars"
+    },
+    "371": {
+      "symbol": "",
+      "desc": "Number of farms"
+    },
+    "372": {
+      "symbol": "",
+      "desc": "Farm operators"
+    },
+    "373": {
+      "symbol": "",
+      "desc": "Index, 2017=100"
+    },
+    "374": {
+      "symbol": "",
+      "desc": "Index, 2015=100"
+    },
+    "375": {
+      "symbol": "",
+      "desc": "1997 chained dollars"
+    },
+    "376": {
+      "symbol": "",
+      "desc": "Number, indices of change"
+    },
+    "377": {
+      "symbol": "",
+      "desc": "Per dollar of output"
+    },
+    "378": {
+      "symbol": "",
+      "desc": "Per million dollars of output"
+    },
+    "379": {
+      "symbol": "",
+      "desc": "Average years"
+    },
+    "38": {
+      "symbol": "",
+      "desc": "Births"
+    },
+    "380": {
+      "symbol": "",
+      "desc": "Grams per day"
+    },
+    "381": {
+      "symbol": "",
+      "desc": "2012 chained dollars"
+    },
+    "382": {
+      "symbol": "",
+      "desc": "Chained (2012) dollars per hour"
+    },
+    "383": {
+      "symbol": "",
+      "desc": "2012=100"
+    },
+    "384": {
+      "symbol": "",
+      "desc": "Units per litre"
+    },
+    "385": {
+      "symbol": "",
+      "desc": "Cents per dozen"
+    },
+    "386": {
+      "symbol": "",
+      "desc": "Index, 2016=100"
+    },
+    "387": {
+      "symbol": "",
+      "desc": "2017 constant dollars"
+    },
+    "388": {
+      "symbol": "",
+      "desc": "201812=100"
+    },
+    "389": {
+      "symbol": "",
+      "desc": "2011 constant dollars"
+    },
+    "39": {
+      "symbol": "",
+      "desc": "Blocks"
+    },
+    "390": {
+      "symbol": "",
+      "desc": "2018=100"
+    },
+    "391": {
+      "symbol": "",
+      "desc": "Chained (2012) dollars in thousands"
+    },
+    "392": {
+      "symbol": "",
+      "desc": "Litres per litre"
+    },
+    "393": {
+      "symbol": "",
+      "desc": "Femtolitres"
+    },
+    "394": {
+      "symbol": "",
+      "desc": "Nanomoles per millimole (nmol/mmol)"
+    },
+    "395": {
+      "symbol": "",
+      "desc": "Rate per 100,000 live births"
+    },
+    "396": {
+      "symbol": "",
+      "desc": "Percentage point"
+    },
+    "397": {
+      "symbol": "",
+      "desc": "Age-standardized rate per 100,000 person-years at risk"
+    },
+    "398": {
+      "symbol": "",
+      "desc": "Index, 2018=100"
+    },
+    "399": {
+      "symbol": "",
+      "desc": "Carats"
+    },
+    "4": {
+      "symbol": "",
+      "desc": "198812=100"
+    },
+    "40": {
+      "symbol": "",
+      "desc": "Board feet"
+    },
+    "400": {
+      "symbol": "",
+      "desc": "2018 constant dollars"
+    },
+    "401": {
+      "symbol": "",
+      "desc": "2019=100"
+    },
+    "402": {
+      "symbol": "",
+      "desc": "2017=100"
+    },
+    "403": {
+      "symbol": "",
+      "desc": "Index, 202001=100"
+    },
+    "404": {
+      "symbol": "",
+      "desc": "2019 constant dollars"
+    },
+    "405": {
+      "symbol": "",
+      "desc": "Incidents"
+    },
+    "406": {
+      "symbol": "",
+      "desc": "Tonnes per thousand dollars"
+    },
+    "407": {
+      "symbol": "",
+      "desc": "Index value (2019=0)"
+    },
+    "408": {
+      "symbol": "",
+      "desc": "Megajoules"
+    },
+    "409": {
+      "symbol": "",
+      "desc": "Full cords"
+    },
+    "41": {
+      "symbol": "",
+      "desc": "Bricks"
+    },
+    "410": {
+      "symbol": "",
+      "desc": "Metres"
+    },
+    "411": {
+      "symbol": "",
+      "desc": "Grams per one million people per day"
+    },
+    "412": {
+      "symbol": "",
+      "desc": "Kilonewtons (kN)"
+    },
+    "413": {
+      "symbol": "",
+      "desc": "Force per unit mass (m/s2)"
+    },
+    "414": {
+      "symbol": "",
+      "desc": "Kilowatt per kilogram (kW/kg)"
+    },
+    "415": {
+      "symbol": "",
+      "desc": "Meters per second (m/s)"
+    },
+    "416": {
+      "symbol": "",
+      "desc": "Milligrams per cubic centimeter (mg/cm³)"
+    },
+    "417": {
+      "symbol": "",
+      "desc": "Square millimeters (mm2)"
+    },
+    "418": {
+      "symbol": "",
+      "desc": "Travellers"
+    },
+    "419": {
+      "symbol": "",
+      "desc": "Visitors"
+    },
+    "42": {
+      "symbol": "",
+      "desc": "Bushels"
+    },
+    "420": {
+      "symbol": "",
+      "desc": "Millimoles per litre (mmol/L)"
+    },
+    "421": {
+      "symbol": "",
+      "desc": "Watts per kilogram (W/kg)"
+    },
+    "422": {
+      "symbol": "",
+      "desc": "Average"
+    },
+    "423": {
+      "symbol": "",
+      "desc": "Average number"
+    },
+    "424": {
+      "symbol": "",
+      "desc": "Rate per 1,000 married persons"
+    },
+    "425": {
+      "symbol": "",
+      "desc": "2020 constant dollars"
+    },
+    "426": {
+      "symbol": "",
+      "desc": "Index, 2019=100"
+    },
+    "427": {
+      "symbol": "",
+      "desc": "202204=100"
+    },
+    "428": {
+      "symbol": "",
+      "desc": "Persons in thousands"
+    },
+    "429": {
+      "symbol": "",
+      "desc": "2021 constant dollars"
+    },
+    "43": {
+      "symbol": "",
+      "desc": "Bushels per acre"
+    },
+    "430": {
+      "symbol": "",
+      "desc": "Index, 2020=100"
+    },
+    "431": {
+      "symbol": "",
+      "desc": "Average percentage"
+    },
+    "432": {
+      "symbol": "",
+      "desc": "Rate per 1,000 persons of the same marital status"
+    },
+    "433": {
+      "symbol": "",
+      "desc": "Feet"
+    },
+    "434": {
+      "symbol": "",
+      "desc": "Index, 2021=100"
+    },
+    "435": {
+      "symbol": "",
+      "desc": "198901=100"
+    },
+    "436": {
+      "symbol": "",
+      "desc": "Count"
+    },
+    "437": {
+      "symbol": "",
+      "desc": "Kilometres per square kilometre"
+    },
+    "438": {
+      "symbol": "",
+      "desc": "202304=100"
+    },
+    "439": {
+      "symbol": "",
+      "desc": "2022 constant dollars"
+    },
+    "44": {
+      "symbol": "",
+      "desc": "Businesses"
+    },
+    "440": {
+      "symbol": "",
+      "desc": "2017 chained dollars"
+    },
+    "441": {
+      "symbol": "",
+      "desc": "Tonnes per hectare"
+    },
+    "442": {
+      "symbol": "",
+      "desc": "Milligrams per one thousand people per day (mg/1000 people/day)"
+    },
+    "443": {
+      "symbol": "",
+      "desc": "Count per hectare"
+    },
+    "444": {
+      "symbol": "",
+      "desc": "Average number of weeks"
+    },
+    "445": {
+      "symbol": "",
+      "desc": "Chained (2017) dollars in thousands"
+    },
+    "446": {
+      "symbol": "",
+      "desc": "Chained (2017) dollars per hour"
+    },
+    "447": {
+      "symbol": "",
+      "desc": "Boolean"
+    },
+    "448": {
+      "symbol": "",
+      "desc": "Rate per 1,000 population"
+    },
+    "449": {
+      "symbol": "",
+      "desc": "2023 constant dollars"
+    },
+    "45": {
+      "symbol": "",
+      "desc": "Calves"
+    },
+    "450": {
+      "symbol": "",
+      "desc": "Millions of cubic metres"
+    },
+    "451": {
+      "symbol": "",
+      "desc": "Index, 2023=100"
+    },
+    "452": {
+      "symbol": "",
+      "desc": "202404=100"
+    },
+    "453": {
+      "symbol": "",
+      "desc": "Cubic metres per square metre"
+    },
+    "454": {
+      "symbol": "",
+      "desc": "Index, 202407=100"
+    },
+    "455": {
+      "symbol": "",
+      "desc": "2024 constant dollars"
+    },
+    "456": {
+      "symbol": "",
+      "desc": "Arbitrary Unit"
+    },
+    "457": {
+      "symbol": "",
+      "desc": "Milligram per cubic meter (mg/m3)"
+    },
+    "458": {
+      "symbol": "",
+      "desc": "Rate per 10,000 population"
+    },
+    "459": {
+      "symbol": "",
+      "desc": "Tonnes (x 1,000)"
+    },
+    "46": {
+      "symbol": "",
+      "desc": "Canada = 100"
+    },
+    "460": {
+      "symbol": "",
+      "desc": "2025 constant dollars"
+    },
+    "461": {
+      "symbol": "",
+      "desc": "Metres per square kilometres"
+    },
+    "462": {
+      "symbol": "",
+      "desc": "Dollars per thousand cubic metres (megalitre)"
+    },
+    "463": {
+      "symbol": "",
+      "desc": "Index, 201801=100"
+    },
+    "47": {
+      "symbol": "",
+      "desc": "Canadian dollars"
+    },
+    "48": {
+      "symbol": "",
+      "desc": "Canadian dollars per hundredweight"
+    },
+    "49": {
+      "symbol": "",
+      "desc": "Canadian dollars per unit of foreign currency"
+    },
+    "5": {
+      "symbol": "",
+      "desc": "1992 constant dollars"
+    },
+    "50": {
+      "symbol": "",
+      "desc": "Carriers"
+    },
+    "51": {
+      "symbol": "",
+      "desc": "Cars"
+    },
+    "52": {
+      "symbol": "",
+      "desc": "Cassettes"
+    },
+    "53": {
+      "symbol": "",
+      "desc": "Cattle"
+    },
+    "54": {
+      "symbol": "",
+      "desc": "Cent/dozen"
+    },
+    "55": {
+      "symbol": "",
+      "desc": "Cents"
+    },
+    "56": {
+      "symbol": "",
+      "desc": "Cents per cubic metre"
+    },
+    "57": {
+      "symbol": "",
+      "desc": "Cents per litre"
+    },
+    "58": {
+      "symbol": "",
+      "desc": "Cents per pound"
+    },
+    "59": {
+      "symbol": "",
+      "desc": "Cents per pound of butter fat"
+    },
+    "6": {
+      "symbol": "",
+      "desc": "1992 constant dollars per square kilometre"
+    },
+    "60": {
+      "symbol": "",
+      "desc": "Chained (2002) dollars"
+    },
+    "61": {
+      "symbol": "",
+      "desc": "Chained (2002) dollars per hour"
+    },
+    "62": {
+      "symbol": "",
+      "desc": "Chained (2007) dollars in thousands"
+    },
+    "63": {
+      "symbol": "",
+      "desc": "Chained (2007) dollars per hour"
+    },
+    "64": {
+      "symbol": "",
+      "desc": "Chicks"
+    },
+    "65": {
+      "symbol": "",
+      "desc": "Children"
+    },
+    "66": {
+      "symbol": "",
+      "desc": "Cigarettes"
+    },
+    "67": {
+      "symbol": "",
+      "desc": "Cigars"
+    },
+    "68": {
+      "symbol": "",
+      "desc": "Claims"
+    },
+    "69": {
+      "symbol": "",
+      "desc": "Corporations"
+    },
+    "7": {
+      "symbol": "",
+      "desc": "1992=100"
+    },
+    "70": {
+      "symbol": "",
+      "desc": "Corporations"
+    },
+    "71": {
+      "symbol": "",
+      "desc": "Crude rate per 100,000 population"
+    },
+    "72": {
+      "symbol": "",
+      "desc": "Cubic metres"
+    },
+    "73": {
+      "symbol": "",
+      "desc": "Cubic metres dry"
+    },
+    "74": {
+      "symbol": "",
+      "desc": "Cubic yards"
+    },
+    "75": {
+      "symbol": "",
+      "desc": "Current dollars"
+    },
+    "76": {
+      "symbol": "",
+      "desc": "Customers"
+    },
+    "77": {
+      "symbol": "",
+      "desc": "Days"
+    },
+    "78": {
+      "symbol": "",
+      "desc": "Degrees Celsius"
+    },
+    "79": {
+      "symbol": "",
+      "desc": "Discs"
+    },
+    "8": {
+      "symbol": "",
+      "desc": "199412=100"
+    },
+    "80": {
+      "symbol": "",
+      "desc": "Dollar per 100 pound"
+    },
+    "81": {
+      "symbol": "",
+      "desc": "Dollars"
+    },
+    "82": {
+      "symbol": "",
+      "desc": "Dollars per 1.81 kilograms"
+    },
+    "83": {
+      "symbol": "",
+      "desc": "Dollars per 10 kilograms"
+    },
+    "84": {
+      "symbol": "",
+      "desc": "Dollars per 10 litres"
+    },
+    "85": {
+      "symbol": "",
+      "desc": "Dollars per 10 x 400 grams"
+    },
+    "86": {
+      "symbol": "",
+      "desc": "Dollars per 10,000 feet"
+    },
+    "87": {
+      "symbol": "",
+      "desc": "Dollars per 15 kilograms"
+    },
+    "88": {
+      "symbol": "",
+      "desc": "Dollars per 2 kilograms"
+    },
+    "888": {
+      "symbol": "",
+      "desc": "Null"
+    },
+    "89": {
+      "symbol": "",
+      "desc": "Dollars per 2.5 kilograms"
+    },
+    "9": {
+      "symbol": "",
+      "desc": "1996=100"
+    },
+    "90": {
+      "symbol": "",
+      "desc": "Dollars per 20 kilograms"
+    },
+    "91": {
+      "symbol": "",
+      "desc": "Dollars per 20 litres"
+    },
+    "92": {
+      "symbol": "",
+      "desc": "Dollars per 205 litres"
+    },
+    "93": {
+      "symbol": "",
+      "desc": "Dollars per 22.7 litres"
+    },
+    "94": {
+      "symbol": "",
+      "desc": "Dollars per 25 kilograms"
+    },
+    "95": {
+      "symbol": "",
+      "desc": "Dollars per 3 kilograms"
+    },
+    "96": {
+      "symbol": "",
+      "desc": "Dollars per 3.3 litres"
+    },
+    "97": {
+      "symbol": "",
+      "desc": "Dollars per 4 litres"
+    },
+    "98": {
+      "symbol": "",
+      "desc": "Dollars per 4.45 litres"
+    },
+    "99": {
+      "symbol": "",
+      "desc": "Dollars per 5 litres"
+    }
+  }
+}
