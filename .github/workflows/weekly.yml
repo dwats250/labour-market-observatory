@@ -1,0 +1,92 @@
+name: Weekly check
+
+on:
+  schedule:
+    - cron: "17 17 * * 6"   # Saturdays 17:17 UTC; GitHub may delay or occasionally drop scheduled runs
+  workflow_dispatch:         # manual refresh: Actions → Weekly check → Run workflow
+  push:                      # redeploy when code or config changes (bot data commits do not retrigger)
+    branches: [main]
+    paths:
+      - "src/**"
+      - "config/**"
+      - "tests/**"
+      - ".github/workflows/weekly.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weekly-check
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    outputs:
+      collection_ok: ${{ steps.collect.outputs.collection_ok }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Collect Statistics Canada data
+        id: collect
+        run: python3 -m src.collect
+
+      - name: Run focused checks
+        run: python3 -m unittest discover -s tests -t .
+
+      - name: Build site
+        run: python3 -m src.build
+
+      - name: Commit data, status and report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data reports
+          if git diff --cached --quiet; then
+            echo "No data, status or report changes to commit."
+          else
+            git commit -m "Weekly check $(date -u +%Y-%m-%dT%H:%MZ)"
+            if ! git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "::error::Push rejected (the branch moved or is protected). Nothing was force-pushed or overwritten; re-run the workflow."
+              exit 1
+            fi
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  collection-result:
+    # Runs after the page has had its chance to deploy, so a failed source shows
+    # up as a failed run while the site still serves last-good data + a notice.
+    needs: [collect, deploy]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Surface collection failures
+        run: |
+          if [ "${{ needs.collect.outputs.collection_ok }}" != "true" ]; then
+            echo "::error::One or more datasets were not updated. The site shows last-good data with a status notice. See the 'Collect Statistics Canada data' step."
+            echo "### Collection incomplete — see the collect step log" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          echo "Both datasets collected." >> "$GITHUB_STEP_SUMMARY"

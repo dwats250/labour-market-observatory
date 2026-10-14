@@ -1,0 +1,95 @@
+{
+  "_comment": "Series are resolved at run time from Statistics Canada WDS cube metadata by published member label. No vector IDs or coordinates are hard-coded; the resolved vectorId, coordinate and member labels are recorded in data/official/*.json.",
+  "geographies": [
+    {
+      "key": "vic",
+      "label": "Vancouver Island and Coast — economic region",
+      "shortLabel": "Vancouver Island and Coast",
+      "accept": ["Vancouver Island and Coast, British Columbia", "Vancouver Island and Coast"],
+      "default": true
+    },
+    {
+      "key": "bc",
+      "label": "British Columbia",
+      "shortLabel": "British Columbia",
+      "accept": ["British Columbia"]
+    },
+    {
+      "key": "ca",
+      "label": "Canada",
+      "shortLabel": "Canada",
+      "accept": ["Canada"]
+    }
+  ],
+  "datasets": [
+    {
+      "key": "labour_force",
+      "productId": 14100462,
+      "tableId": "14-10-0462-01",
+      "title": "Labour force characteristics by economic region, three-month moving average, unadjusted for seasonality",
+      "tableUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410046201",
+      "frequency": "monthly",
+      "latestN": 36,
+      "displayPeriods": 24,
+      "periodNote": "Three-month average ending {period}; not seasonally adjusted.",
+      "geographyDimension": "^geography$",
+      "measureDimension": "^labour force characteristics$",
+      "measures": [
+        {"key": "employment", "label": "Employment", "kind": "count", "accept": ["Employment"]},
+        {"key": "employment_rate", "label": "Employment rate", "kind": "rate", "accept": ["Employment rate"]},
+        {"key": "unemployment_rate", "label": "Unemployment rate", "kind": "rate", "accept": ["Unemployment rate"]}
+      ],
+      "fixedDimensions": [
+        {"dimension": "gender|sex", "accept": ["Total - Gender", "Total, all genders", "Both sexes", "Total - Sex"]},
+        {"dimension": "age", "accept": ["15 years and over"]},
+        {"dimension": "^statistics$", "accept": ["Estimate"]},
+        {"dimension": "data type", "accept": ["Unadjusted", "Seasonally unadjusted", "Unadjusted for seasonality"]}
+      ]
+    },
+    {
+      "key": "vacancies",
+      "productId": 14100441,
+      "tableId": "14-10-0441-01",
+      "title": "Job vacancies, payroll employees, job vacancy rate, and average offered hourly wage by economic regions, quarterly, unadjusted for seasonality",
+      "tableUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410044101",
+      "frequency": "quarterly",
+      "latestN": 12,
+      "displayPeriods": 8,
+      "periodNote": "Quarter: {period}; not seasonally adjusted.",
+      "geographyDimension": "^geography$",
+      "measureDimension": "^statistics$",
+      "measures": [
+        {"key": "job_vacancies", "label": "Job vacancies", "kind": "count", "accept": ["Job vacancies"]},
+        {"key": "job_vacancy_rate", "label": "Job vacancy rate", "kind": "rate", "accept": ["Job vacancy rate"]}
+      ],
+      "fixedDimensions": [
+        {"dimension": "data type", "accept": ["Unadjusted", "Seasonally unadjusted", "Unadjusted for seasonality"]}
+      ]
+    }
+  ],
+  "localSearch": {
+    "places": ["Nanaimo", "Parksville", "Qualicum Beach", "Ladysmith", "Duncan"],
+    "links": [
+      {
+        "name": "Job Bank",
+        "url": "https://www.jobbank.gc.ca/jobsearch/",
+        "how": "Enter a job title or keyword (any occupation — trades, tech, sales or otherwise) and type a town such as Nanaimo, BC in the location box."
+      },
+      {
+        "name": "WorkBC job search",
+        "url": "https://www.workbc.ca/find-job/search-jobs",
+        "how": "Search by keyword, then set the location to one of the towns below."
+      },
+      {
+        "name": "CivicInfo BC careers",
+        "url": "https://www.civicinfo.bc.ca/careers",
+        "how": "Local-government and public-sector postings. Use the Geographic Region filter for the Vancouver Island regions."
+      }
+    ],
+    "forecast": {
+      "name": "WorkBC B.C. Labour Market Outlook",
+      "url": "https://www.workbc.ca/labour-market/bc-labour-market-outlook",
+      "how": "A provincial ten-year forecast published by WorkBC. It is a projection, not an observation, and is not used in this dashboard."
+    }
+  }
+}
