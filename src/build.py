@@ -25,6 +25,8 @@ except Exception:  # pragma: no cover
 
 HERE = Path(__file__).resolve().parent
 STALE_DAYS = 14
+# Symbols that warn the reader; others (A–D quality grades, p, r) are shown neutrally.
+WARN_SYMBOLS = {"E", "F", "x", "..", "...", "<LOD"}
 
 
 def e(s) -> str:
@@ -62,9 +64,12 @@ def card(v: dict) -> str:
     flags = ""
     if v["caution"]:
         flags += '<div class="c-flag">E · Use with caution</div>'
-    other = [(s, d) for s, d in v["flags"] if s != "E"]
-    if other:
-        flags += "".join(f'<div class="c-flag">{e(s)}{" · " + e(d) if d else ""}</div>' for s, d in other)
+    for s, d in v["flags"]:
+        if s == "E":
+            continue
+        text = f"{d[:1].upper() + d[1:]} ({s})" if d else s
+        cls = "c-flag" if s in WARN_SYMBOLS else "c-quality"
+        flags += f'<div class="{cls}">{e(text)}</div>'
     if v["available"]:
         value = f'<div class="c-value">{e(v["valueText"])}</div><div class="c-unit">{e(v["unit"])}</div>'
     else:
@@ -125,9 +130,9 @@ def cell(o: dict | None, kind: str) -> str:
     if not metrics.is_number(o.get("value")):
         syms = " ".join(s for s, _ in metrics.flag_symbols(o)) or "n/a"
         return f'<td class="na">{e(syms)}</td>'
-    flags = " ".join(s for s, _ in metrics.flag_symbols(o))
+    sups = "".join(f' <sup class="{"w" if s in WARN_SYMBOLS else "q"}">{e(s)}</sup>' for s, _ in metrics.flag_symbols(o))
     txt = metrics.format_number(o["value"], o.get("decimals", 1))
-    return f'<td>{e(txt)}{f" <sup>{e(flags)}</sup>" if flags else ""}</td>'
+    return f'<td>{e(txt)}{sups}</td>'
 
 
 def table(ds: dict, geo_key: str) -> str:

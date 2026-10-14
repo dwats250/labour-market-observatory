@@ -118,6 +118,7 @@ section.geo > h2 { font-size: 1.35rem; font-weight: 650; }
 .c-change .arrow { font-size: .75rem; color: var(--ink-2); }
 .c-flag, .c-note { margin-top: 6px; font-size: .8rem; color: var(--alert); font-weight: 600; }
 .c-note { color: var(--ink-3); font-weight: 400; }
+.c-quality { margin-top: 6px; font-size: .8rem; color: var(--ink-3); }
 
 h3.sub { margin-top: 26px; font-size: 1rem; font-weight: 650; }
 .figs { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); margin-top: 10px; }
@@ -148,7 +149,8 @@ th:first-child, td:first-child { text-align: left; }
 thead th { font-weight: 600; font-size: .8rem; color: var(--ink-2); white-space: normal; }
 tbody th { font-weight: 500; }
 td.na { color: var(--ink-3); }
-td sup { color: var(--alert); font-weight: 700; }
+td sup { font-weight: 600; color: var(--ink-3); }
+td sup.w { color: var(--alert); font-weight: 700; }
 table.small td { white-space: normal; text-align: left; font-size: .8rem; }
 
 /* ---- local + sources */
