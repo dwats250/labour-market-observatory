@@ -2,22 +2,22 @@
   "schema": 1,
   "datasets": {
     "labour_force": {
-      "lastAttempt": "2026-10-14T17:07:10Z",
+      "lastAttempt": "2026-10-14T17:09:29Z",
       "lastResult": "ok",
       "error": null,
-      "lastSuccess": "2026-10-14T17:07:10Z",
+      "lastSuccess": "2026-10-14T17:09:29Z",
       "latestReferencePeriod": "2026-09-01",
       "lastDataChange": "2026-10-14T17:07:10Z"
     },
     "vacancies": {
-      "lastAttempt": "2026-10-14T17:07:10Z",
+      "lastAttempt": "2026-10-14T17:09:29Z",
       "lastResult": "ok",
       "error": null,
-      "lastSuccess": "2026-10-14T17:07:10Z",
+      "lastSuccess": "2026-10-14T17:09:29Z",
       "latestReferencePeriod": "2026-04-01",
       "lastDataChange": "2026-10-14T17:07:10Z"
     }
   },
   "revisions": [],
-  "lastRun": "2026-10-14T17:07:10Z"
+  "lastRun": "2026-10-14T17:09:29Z"
 }
